@@ -1,0 +1,13 @@
+
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Icon Shape -->
+  <rect x="0" y="0" rx="15" ry="15" width="60" height="60" fill="#6675F7"/>
+  
+  <!-- Cross Symbol inside Icon -->
+  <path d="M35 15h-10v10h-10v10h10v10h10v-10h10v-10h-10z" fill="white"/>
+  
+  <!-- Brand Text -->
+  <text x="70" y="38" font-family="Arial, sans-serif" font-size="26" fill="#001A72" font-weight="bold">
+    QuickDoc
+  </text>
+</svg>
