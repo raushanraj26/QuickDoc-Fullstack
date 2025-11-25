@@ -18,3 +18,14 @@ const doctorSchema = new mongoose.Schema({
 
 const doctorModel = mongoose.models.doctor || mongoose.model("doctor", doctorSchema);
 export default doctorModel;
+
+
+//line 19 explanation
+// mongoose.models is an object that contains all registered models.
+
+// mongoose.models.doctor checks if a model named "doctor" has already been created.
+
+// If the "doctor" model already exists, it will use the existing model (mongoose.models.doctor).
+
+// If not, it creates a new model using mongoose.model("doctor", doctorSchema).
+
