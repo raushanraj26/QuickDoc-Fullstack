@@ -7,8 +7,8 @@ const Navbar = () => {
 
   const navigate = useNavigate()
 
-  const [showMenu, setShowMenu] = useState(false)
-  const { token, setToken, userData } = useContext(AppContext)
+  const [showMenu, setShowMenu] = useState(false)  //state to handle mobile menu display
+  const { token, setToken, userData } = useContext(AppContext)  //token used to check if user is logged in
 
   const logout = () => {
     localStorage.removeItem('token')
@@ -39,7 +39,7 @@ const Navbar = () => {
       </ul>
 
       <div className='flex items-center gap-4 '>
-        {
+        {                   //conditional rendering based on user login status like showing profile pic and dropdown if logged in else show login button
           token && userData
             ? <div className='flex items-center gap-2 cursor-pointer group relative'>
               <img className='w-8 rounded-full' src={userData.image} alt="" />

@@ -8,7 +8,7 @@ import { toast } from 'react-toastify'
 
 const Appointment = () => {
 
-    const { docId } = useParams()
+    const { docId } = useParams()  //get docID from url,coming from Doctor.jsx page
     const { doctors, currencySymbol, backendUrl, token, getDoctosData } = useContext(AppContext)
     const daysOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
 
